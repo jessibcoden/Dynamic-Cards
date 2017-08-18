@@ -2,25 +2,36 @@ console.log("Dynamic Cards, Boyeee!");
 
 var input = document.getElementById("input");
 var createButton = document.getElementById("create-button");
+var cardHolder = document.getElementById("card-holder");
 
 var cardz = [];
 
-function cardDom (input){
+function cardDom (){
 	var cardString = '';
-	for(var i=0; i<cardz.length; i++){
-		var newCard = '';
-		newCard+=`<div id="card-holder">`;
-		newCard+=	`<article id="card">`;
-		newCard+=		`<section class="text-display">${input}</section>`;
-		// newCard+=		`<button class="delete-button">${deleteCard}</button>`;
-		newCard+=	`</article>`;
-		newCard+=`</div>`;
-
-		cardString += newCard;
-	}
+	cardString+=	`<article class="card">`;
+	cardString+=		`<section class="text-display">${input.value}</section>`;
+	cardString+=		`<button class="delete-button">Delete</button>`;
+	cardString+=	`</article>`;
+	console.log(cardString);
 	writeToDom(cardString);
-	console.log("cardString", cardString);
 }
+
+function writeToDom (cardString){
+	cardHolder.innerHTML+=cardString;
+}
+
+function deleteCard (event){
+	console.log(event.currentTarget);
+
+
+
+}
+
+createButton.addEventListener("click", cardDom);
+
+cardHolder.addEventListener("click", deleteCard);
+
+
 
 // createButton.addEventListener('mouseenter', function() {
 // 	cardDom(input); //pass planets (without the z) so it returns all planets
@@ -30,7 +41,7 @@ function cardDom (input){
 
 
 
-// function displayNewCard(){
+// function displaycardString(){
 // 	if(createButton.click){
 
 // 	}
