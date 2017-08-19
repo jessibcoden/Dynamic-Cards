@@ -1,43 +1,96 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	text-align: center;
 	background-color: black;
 	color: white;
 	margin: 30px;
 }
 
 h1 {
+	font-size: 4em;
+	color: pink;
 	margin-bottom: 10px;
+	text-align: center;
 }
+
+.sub-head {
+	font-size: 1.75em;
+	text-align: center;
+}
+
+/* INPUT AREA STYLING */
 
 #input-container h2 {
 	font-size: 2em;
 	margin-top: 50px;
-}
-
-#input {
-	height: 150px;
-	width: 260px;
 	flex-direction: column;
+	color: pink;
+	text-align: center;
 }
 
-#create-button {
+.center-me {
+	width: 20%;
+	margin: 0 40%;
+}
+
+.center-me > * {
+	display: block;
+	width: 100%;
+}
+
+textarea {
+	font-size: 1.5em;
 	font-family: 'Roboto', sans-serif;
-	flex-direction: column;
 }
 
+
+/* SYLING FOR ALL BUTTONS */
+
+button {
+	margin: 10px;
+	font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: pink;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+/* CARD STYLING */
+
+#card-holder {
+	margin-top: 50px;
+}
+
+#card-holder h2 {
+	text-align: center;
+	color: pink;
+	font-size: 2em;
+}
 
 .card {
-	height: 400px;
-	width: 300px;
+	max-width: 475px;
+	margin: 20px;
 	background-color: white;
+	display: inline-block;
 }
 
 .text-display {
 	margin: 10px;
 	color: black;
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
 }
-
 
 
 
