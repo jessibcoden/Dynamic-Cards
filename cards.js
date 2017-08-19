@@ -1,6 +1,5 @@
 console.log("Dynamic Cards, Boyeee!");
 
-
 //Store HTML Dom elements in variables
 var input = document.getElementById("input");
 var createButton = document.getElementById("create-button");
@@ -15,18 +14,11 @@ function cardDom (){
 	cardString+=	`</article>`;
 	console.log(cardString);
 	writeToDom(cardString);//calls writeToDom function written below
+	input.value = "";//clears textarea when a card is written to Dom
 }
-
-//add function to clear the textarea when the createButton is clicked ***NOT YET WORKING, NEED ASSISTANCE MAYBE?******
-function clearTextarea (){
-	input.clear();
-}
-
-console.log(clearTextarea)
 
 //add event listener to element with id="create-button" - when button is clicked, it invokes the cardDom function creating a card
-createButton.addEventListener("click", cardDom, clearTextarea);
-
+createButton.addEventListener("click", cardDom);
 
 //Create function to insert cardString into the cardHolder Dom element
 function writeToDom (cardString){
