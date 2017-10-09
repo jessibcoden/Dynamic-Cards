@@ -1,7 +1,11 @@
 # Dynamic Cards
+<<<<<<< HEAD
 
 > Nashville Software School, Full-Stack Dev Bootcamp, Front-End Independant Exercise
 > 
+=======
+## Bootcamp Assignment
+>>>>>>> 945bb807b37721eab0a4e0c9927b6da78dcebf49
 
 ### Requirements
 
@@ -16,6 +20,7 @@
 	3. When the user clicks the Delete button, the containing card, and no other cards, should then be removed from the DOM. Not just made invisible, actually removed from the DOM.
 ![screenshot](images/dc-delete.png)
 
+<<<<<<< HEAD
 ### How to run (Node must be installed on your machine):
 ```
 git clone https://github.com/lady-ace/Dynamic-Cards
@@ -29,3 +34,6 @@ This will show in your browser at:
 
 ### Contributors:
 [Jessica Brawner](https://github.com/lady-ace)
+=======
+Dynamic-Cards/README.md
+>>>>>>> 945bb807b37721eab0a4e0c9927b6da78dcebf49
